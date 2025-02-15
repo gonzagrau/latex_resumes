@@ -1,3 +1,7 @@
+# General
+.DS_Store/
+*.idea/
+
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
