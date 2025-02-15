@@ -1,0 +1,150 @@
+\input{preamble}
+%%%%%%  CV EMPIEZA AQUÍ  %%%%%%%%%%%
+%%%%%% DEFINIR ELEMENTOS AQUÍ %%%%%%%
+\newcommand{\name}{Gonzalo Grau} % Tu Nombre
+\newcommand{\course}{Bioingeniería} % Tu Programa
+\newcommand{\phone}{91136259546} % Tu Número de Teléfono
+\newcommand{\emaila}{ggrau@itba.edu.ar} %Correo Electrónico 1
+
+\begin{document}
+\fontfamily{cmr}\selectfont
+%----------ENCABEZADO-----------------
+
+{
+\begin{tabularx}{\linewidth}{L r} \\
+  \textbf{\Huge \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +54-\phone}\\
+  & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
+ Estudiante de Bioingeniería en ITBA, & \href{https://github.com/gonzagrau}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub}} \\
+   especializado en Aprendizaje Automático e Inteligencia Artificial & \href{https://www.linkedin.com/in/gonzalo-grau/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn}}
+\end{tabularx}
+}
+
+
+%-----------EDUCACIÓN-----------
+\vspace{-5.0mm}
+\section{\textbf{Educación}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Bioingeniería}{CGPA: 3.43}
+      {Instituto Tecnológico de Buenos Aires}{2020-presente}
+    \resumeSubheading
+      {Programa de intercambio \textit{Friends of Fulbright} 2024}{Aprobado}
+      {Universidad de Nuevo México}{Primavera 2024}
+   \resumeSubHeadingListEnd
+
+%-----------EXPERIENCIA-----------------
+\vspace{-5.0mm}
+\section{\textbf{Experiencia}}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {Pasantía en Ingeniería de IA Aplicada en DevRev}
+    {}{}{Dic 2024 - Presente}
+      \vspace{-5mm}
+      \resumeItemListStart
+    \item { Trabajé junto al equipo de IA Aplicada de Argentina e India desarrollando automatizaciones impulsadas por IA }
+    \item { Proporcioné soporte personalizado para nuestros clientes, con un enfoque orientado al cliente }
+    \item { Habilidades involucradas: Typescript, git, github, gestión de API, pruebas unitarias, ingeniería de prompts, planificación de sprints}
+    \resumeItemListEnd
+
+    \resumeSubheading
+    { Vicepresidente del Capítulo Estudiantil IEEE EMBS ITBA }{}
+      {}{Ago 2022 - Jul 2024}
+      \vspace{-5mm}
+      \resumeItemListStart
+    \item {Vicepresidente del capítulo estudiantil de la Sociedad de Ingeniería en Medicina y Biología del IEEE en el Instituto Tecnológico de Buenos Aires}
+    \item {Habilidades involucradas: liderazgo de equipo, planificación de eventos, trabajo junto a empresas e investigadores de vanguardia}
+    \resumeItemListEnd
+
+    % \vspace{3.0mm}
+
+    \resumeSubheading
+      {Asistente de enseñanza en ITBA}{}
+      {}{Ago 2021 - Presente}
+      \resumeItemListStart
+      \vspace{-5mm}
+    \item {Trabajé junto a profesores de CS liderando clases en Introducción a la Informática y Estructuras de Datos y Algoritmos}
+    \item {Me volví competente en programación en Python, control de versiones y hablar en público}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROYECTOS-----------------
+\vspace{-5.0mm}
+\section{\textbf{Proyectos Personales}}
+\resumeSubHeadingListStart
+    \resumeProject
+      {LungoVax: un simulador interactivo de ventilación mecánica} %Nombre del Proyecto
+      {Mención especial en la conferencia argentina de fisiología 2023} %Nombre del Proyecto, Nombre del Lugar
+      {} %Fechas del Evento
+
+      \resumeItemListStart
+        \item {Modela la respuesta pulmonar bajo una amplia gama de estímulos y condiciones experimentales}
+        \item {Funciona en un motor de resolución de ecuaciones diferenciales basado en Runge-Kutta 4 autoimplementado}
+        \item {Tecnología Utilizada: Python, Numpy, TKinter}
+    \resumeItemListEnd
+    \vspace{0.5mm}
+
+    \resumeProject
+      {Detección de convulsiones en tiempo real} %Nombre del Proyecto
+      {Un modelo de aprendizaje automático para detectar eventos de convulsiones en tiempo real basado en análisis de EEG} %Nombre del Proyecto, Nombre del Lugar
+      {} %Fechas del Evento
+
+      \resumeItemListStart
+        \item {Utiliza máquina de vectores de soporte para clasificar segmentos cortos de señales multicanal}
+        \item {Realiza análisis espacial, estadístico y de Fourier}
+        \item {Tecnología utilizada: Python, Numpy, Scikit-learn, Scipy.}
+    \resumeItemListEnd
+    \vspace{0.5mm}
+
+    \resumeProject
+      {Medición semiautomática de translucencia nucal} %Nombre del Proyecto
+      {Un algoritmo objetivo e independiente del usuario para medir la translucencia nucal en ecografías fetales} %Nombre del Proyecto, Nombre del Lugar
+      {} %Fechas del Evento
+
+      \resumeItemListStart
+        \item {Segmentación de imágenes basada en aprendizaje profundo, combinada con modelos de regresión lineal generalizados}
+        \item {Tecnología Utilizada: Python, Numpy, OpenCV, SITK, keras}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------HABILIDADES TÉCNICAS-----------------
+\vspace{-5.5mm}
+\section{\textbf{Habilidades Técnicas e Intereses}}
+ \begin{itemize}[leftmargin=0.05in, label={}]
+    \small{\item{
+    \textbf{Idiomas}{: Español (nativo), Inglés (competente), Francés (intermedio) } \\
+     \textbf{Lenguajes de Programación}{: C, Python, MATLAB, Arduino } \\
+     \textbf{Bibliotecas }{: Numpy, Matplotlib, Jupyter, Scipy, Pandas, sklearn, OpenCV, PyTorch}\\
+     \textbf{Otras Herramientas}{: VScode, Git, Github, Linux, Trello, MS Office, NX, SolidWorks, mySql, \LaTeX } \\
+
+     % \textbf{Cursos Relevantes}{: Estructuras de Datos y Algoritmos, Métodos Numéricos, Álgebra Lineal, Probabilidad, Sistemas de Gestión de Bases de Datos, Modelado 3D, Neurociencia Computacional, Biomecánica, Procesamiento de Señales e Imágenes Biomédicas, Análisis de Fourier, Introducción a la Electrónica, Equipos Biomédicos, } \\
+     \textbf{Áreas de Interés}{: ML, IA, Aprendizaje Profundo, Modelado Computacional, Procesamiento de Señales e Imágenes]} \\
+     \textbf{Habilidades Blandas}{: Resolución de Problemas, Autoaprendizaje, Adaptabilidad, Metodologías Ágiles, Scrum} \\
+    }}
+ \end{itemize}
+
+
+% %-----------LOGROS-----------------
+\vspace{-5mm}
+\section{\textbf{Certificaciones}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumePOR{MITx Machine Learning with Python: From Linear Models to Deep Learning}{}{2024}
+
+\resumePOR{MITx Introduction to Computer Science and Programming Using Python}{}{2022}
+
+\resumePOR{Cambridge Certificate of Proficiency in English (CPE)}{}{2019}
+
+\resumePOR{Bachillerato Internacional (IB)}{}{2019}
+
+\resumePOR{Alumno Distinguido y Abanderado Nacional}{}{2019}
+
+\resumeSubHeadingListEnd
+
+
+
+
+%-------------------------------------------
+\end{document}
