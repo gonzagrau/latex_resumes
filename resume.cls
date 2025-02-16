@@ -1,32 +1,28 @@
-%-------------------------
-% Resume in Latex
-% Author
-% License : MIT
-%------------------------
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesClass{resume}[2024/01/01 Custom resume class]
+
+\LoadClass[a4paper,11pt]{article}
 
 %---- Required Packages and Functions ----
-
-\documentclass[a4paper,11pt]{article}
-\usepackage{latexsym}
-\usepackage{xcolor}
-\usepackage{float}
-\usepackage{ragged2e}
-\usepackage[empty]{fullpage}
-\usepackage{wrapfig}
-\usepackage{lipsum}
-\usepackage{tabularx}
-\usepackage{titlesec}
-\usepackage{geometry}
-\usepackage{marvosym}
-\usepackage{verbatim}
-\usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage{fontawesome5}
-\usepackage{multicol}
-\usepackage{graphicx}
-\usepackage{cfr-lm}
-\usepackage[T1]{fontenc}
+\RequirePackage{xcolor}
+\RequirePackage{float}
+\RequirePackage{ragged2e}
+\RequirePackage[empty]{fullpage}
+\RequirePackage{wrapfig}
+\RequirePackage{lipsum}
+\RequirePackage{tabularx}
+\RequirePackage{titlesec}
+\RequirePackage{geometry}
+\RequirePackage{marvosym}
+\RequirePackage{verbatim}
+\RequirePackage{enumitem}
+\RequirePackage[hidelinks]{hyperref}
+\RequirePackage{fancyhdr}
+\RequirePackage{fontawesome5}
+\RequirePackage{multicol}
+\RequirePackage{graphicx}
+\RequirePackage{cfr-lm}
+\RequirePackage[T1]{fontenc}
 \setlength{\multicolsep}{0pt}
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -34,11 +30,7 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
-% Adjust margins
-%\addtolength{\oddsidemargin}{-0.5in}
-%\addtolength{\evensidemargin}{-0.5in}
-%\addtolength{\textwidth}{1in}
-\usepackage[most]{tcolorbox}
+\RequirePackage[most]{tcolorbox}
 \tcbset{
     frame code={}
     center title,
@@ -64,7 +56,6 @@
     \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
 
-%-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
     \item{
@@ -117,6 +108,3 @@
 \newcolumntype{L}{>{\raggedright\arraybackslash}X}%
 \newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
 \newcolumntype{C}{>{\centering\arraybackslash}X}%
-
-%---- End of Packages and Functions ------
-

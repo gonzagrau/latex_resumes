@@ -1,150 +1,162 @@
-\input{preamble}
 %-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%
-%%%%%% DEFINE ELEMENTS HERE %%%%%%%
+\documentclass{resume}
 \newcommand{\name}{Gonzalo Grau} % Your Name
 \newcommand{\course}{Bioengineering} % Your Program
-\newcommand{\phone}{91136259546} % Your Phone Number
+\renewcommand{\phone}{9 11 3625-9546} % Your Phone Number
 \newcommand{\emaila}{ggrau@itba.edu.ar} %Email 1
 
 \begin{document}
-\fontfamily{cmr}\selectfont
+    \fontfamily{cmr}\selectfont
 %----------HEADING-----------------
 
-{
-\begin{tabularx}{\linewidth}{L r} \\
-  \textbf{\Huge \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +54-\phone}\\
-  & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
- Senior Bioengineering student at ITBA, & \href{https://github.com/gonzagrau}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub}} \\
-   specialized in Machine Learning and Artificial Intelligence & \href{https://www.linkedin.com/in/gonzalo-grau/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn}}
-\end{tabularx}
-}
+    {
+        \begin{tabularx}{\linewidth}{L r}
+            \\
+            \textbf{\Huge \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +54-\phone}\\
+            & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
+            Senior Bioengineering student at ITBA, &
+            \href{https://github.com/gonzagrau}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub}} \\
+            specialized in Machine Learning and Artificial Intelligence &
+            \href{https://www.linkedin.com/in/gonzalo-grau/}
+            {\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn}}
+        \end{tabularx}
+    }
 
 
 %-----------EDUCATION-----------
-\section{\textbf{Education}}
-  \resumeSubHeadingListStart
+
+
+    \section{\textbf{Education}} \label{sec:education}
+    \resumeSubHeadingListStart
     \resumeSubheading
-      {Bioengineering}{CGPA: 3.43}
-      {Buenos Aires Institute of Technology}{2020-ongoing}
+    {Bioengineering - Senior year (85\%)}{CGPA: 3.46/4.00}
+    {Buenos Aires Institute of Technology}{2020-ongoing}
     \resumeSubheading
-      {\textit{Friends of Fulbright} 2024 exchange program}{Pass}
-      {University of New Mexico}{Spring 2024}
-   \resumeSubHeadingListEnd
+    {Friends of Fulbright 2024 exchange program}{Completed}
+    {University of New Mexico}{Spring 2024}
+    \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
-\vspace{-3.0mm}
-\section{\textbf{Experience}}
-  \resumeSubHeadingListStart
+    \vspace{-5mm}
+
+
+    \section{\textbf{Experience}} \label{sec:experience}
+    \resumeSubHeadingListStart
     \resumeSubheading
     {Applied AI Engineering Internship at DevRev}
     {}{}{Dec 2024 - Present day}
-      \vspace{-5mm}
-      \resumeItemListStart
-    \item { Worked alongside the Applied AI team from Argentina and India developing AI powered automations }
-    \item { Provided tailored support for our clients, with a customer-facing approach }
-    \item { Skills involved: Typescript, git, github, API management, unit testing, prompt engineering, sprint planning}
+    \vspace{-5mm}
+    \resumeItemListStart
+    \item
+    {Helped develop AI powered automations for optimising
+    customer support related processes}
+    \item {Provided tailored support for our clients, with a customer-facing approach}
+    \item {Skills involved: Typescript, git, GitHub, API management, unit testing, prompt engineering, sprint planning}
     \resumeItemListEnd
 
     \resumeSubheading
-    { Vice president at the IEEE EMBS ITBA Student Chapter }{}
-      {}{Aug 2022 - July 2024}
-      \vspace{-5mm}
-      \resumeItemListStart
-    \item {Vicepresident for the IEEE Engineering in Medicine and Biology Society student chapter at the Buenos Aires Institute of Technology}
-    \item {Skills involved: team leading, event planning, working alongside state-of-the-art companies and researchers}
+    {Vice president at the IEEE EMBS ITBA Student Chapter}{}
+    {}{Aug 2022 - July 2024}
+    \vspace{-5mm}
+    \resumeItemListStart
+    \item{Vice President for the IEEE Engineering in Medicine and Biology Society student chapter at ITBA}
+    \item{Collaborated with international student chapters,
+        as well as multinational health and biotech companies}
+    \item {Skills involved: team leading, event planning}
     \resumeItemListEnd
 
-    % \vspace{3.0mm}
 
     \resumeSubheading
-      {Teaching assistant at ITBA}{}
-      {}{Aug 2021 - Present day}
-      \resumeItemListStart
-      \vspace{-5mm}
-    \item {Worked alongside CS professors leading classes in Introduction to Informatics and Data Structures and Algorithms}
+    {Teaching assistant at ITBA}{}
+    {}{Aug 2021 - Present day}
+    \vspace{-5mm}
+    \resumeItemListStart
+    \item
+    {Assisted in teaching classes in Introduction to Informatics and Data Structures and Algorithms,
+        designed and graded assignments and exams}
     \item {Became proficient in Python programming, source control, and public speaking}
     \resumeItemListEnd
-  \resumeSubHeadingListEnd
+    \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------------
-\vspace{-5.0mm}
-\section{\textbf{Personal Projects}}
-\resumeSubHeadingListStart
+    \vspace{-5mm}
+
+
+    \section{\textbf{Personal Projects}} \label{sec:projects}
+    \resumeSubHeadingListStart
     \resumeProject
-      {LungoVax: an interactive mechanical ventilation simulator} %Project Name
-      {Awarded a special mention at the Argentinian physiology conference 2023} %Project Name, Location Name
-      {} %Event Dates
+    {LungoVax: an interactive mechanical ventilation simulator} %Project Name
+    {Awarded a special mention at the Argentinian physiology conference 2023} %Project Name, Location Name
+    {} %Event Dates
 
-      \resumeItemListStart
-        \item {Models lung response under a wide range of stimuli and experimental conditions}
-        \item {Runs on a self-implemented Runge-Kutta 4 based differential equation solver engine}
-        \item {Technology Used: Python, Numpy, TKinter}
-    \resumeItemListEnd
-    \vspace{0.5mm}
-
-    \resumeProject
-      {Real-time seizure detection} %Project Name
-      {A machine learning model to detect seizure events in real time based on EEG analysis} %Project Name, Location Name
-      {} %Event Dates
-
-      \resumeItemListStart
-        \item {Uses support vector machine to classify short multichannel signal segments}
-        \item {Performs spatial, statistical, and Fourier analysis}
-        \item {Technology used: Python, Numpy, Scikit-learn, Scipy.}
-    \resumeItemListEnd
-    \vspace{0.5mm}
-
-    \resumeProject
-      {Semi-automatic nuchal translucency measurement} %Project Name
-      {An objective, user independent algorithm to measure nuchal translucency in ultrasound fetal scan} %Project Name, Location Name
-      {} %Event Dates
-
-      \resumeItemListStart
-        \item {Deep learning based image segmentation, combined with generalized linear regression models}
-        \item {Technology Used: Python, Numpy, OpenCV, SITK, keras}
+    \resumeItemListStart
+    \item {Models lung response under a wide range of stimuli and experimental conditions}
+    \item {Runs on a self-implemented Runge-Kutta 4 based differential equation solver engine}
+    \item {Technologies: Python, NumPy, TKinter}
     \resumeItemListEnd
 
-  \resumeSubHeadingListEnd
+    \resumeProject
+    {Real-time seizure detection} %Project Name
+    {A machine learning model to detect seizure events in real time based on EEG analysis} %Project Name, Location Name
+    {} %Event Dates
+
+    \resumeItemListStart
+    \item {Uses support vector machine to classify short multichannel signal segments}
+    \item {Performs spatial, statistical, and Fourier analysis}
+    \item {Technologies: Python, NumPy, Scikit-learn, SciPy}
+    \resumeItemListEnd
+
+    \resumeProject
+    {Semi-automatic nuchal translucency measurement} %Project Name
+    {An objective, user independent algorithm to measure nuchal translucency in ultrasound fetal scan}
+    %Project Name, Location Name
+    {} %Event Dates
+
+    \resumeItemListStart
+    \item {Deep learning based image segmentation, combined with generalized linear regression models}
+    \item {Technologies: Python, NumPy, OpenCV, SITK, Keras}
+    \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
 
 
 %-----------Technical skills-----------------
-\vspace{-5.5mm}
-\section{\textbf{Technical Skills and Interests}}
- \begin{itemize}[leftmargin=0.05in, label={}]
-    \small{\item{
-    \textbf{Languages}{: Spanish (native), English (proficient), French (intermediate) } \\
-     \textbf{Programming Languages}{: C, Python, MATLAB, Arduino } \\
-     \textbf{Libraries }{: Numpy, Matplotlib, Jupyter, Scipy, Pandas, sklearn, OpenCV, PyTorch}\\
-     \textbf{Other Tools}{: VScode, Git, Github, Linux, Trello, MS Office, NX, SolidWorks, mySql, \LaTeX } \\
+    \vspace{-5mm}
 
-     % \textbf{Relevent Coursework}{: Data Structures \& Algorithms, Numerical Methods, Linear Algebra, Probability, Database Management Systems, 3D Modelling, Computational Neuroscience, Biomechanics, Biomedical Signal and Image Processing, Fourier Analysis, Introduction to Electronics, Biomedical Equipment, } \\
-     \textbf{Areas of Interest}{: ML, AI, Deep Learning, Computational Modeling, Signal Processing, Computer Vision} \\
-     \textbf{Soft Skills}{: Problem Solving, Self-learning, Adaptability, Agile methodology, Scrum framework} \\
-    }}
- \end{itemize}
+
+    \section{\textbf{Technical Skills and Interests}} \label{sec:skills}
+    \begin{itemize}[leftmargin=0.05in, label={}]
+        \small{\item{
+            \textbf{Languages:}{ Spanish (native), English (proficient), French (intermediate) } \\
+            \textbf{Programming Languages}{: C, Python, MATLAB, Arduino, Typescript } \\
+            \textbf{Libraries:}{ Numpy, Matplotlib, Jupyter, Scipy, Pandas, sklearn, OpenCV, PyTorch}\\
+            \textbf{Tools:}{ VS Code, Git, GitHub, Linux, Trello, MS Office, Siemens NX, SolidWorks, mySql,
+                \LaTeX} \\
+            \textbf{Fields of Interest:}
+            {ML, AI, Deep Learning, Computational Modeling, Signal Processing, Computer Vision} \\
+            \textbf{Soft Skills:}{ Autodidact, Adaptability, Agile methodology, Scrum framework} \\
+        }}
+    \end{itemize}
 
 
 % %-----------Achievements-----------------
-\vspace{-1mm}
-\section{\textbf{Certifications}}
-\vspace{-0.4mm}
-\resumeSubHeadingListStart
-
-\resumePOR{MITx Machine Learning with Python: From Linear Models to Deep Learning}{}{2024}
-
-\resumePOR{MITx Introduction to Computer Science and Programming Using Python}{}{2022}
-
-\resumePOR{Cambridge Certificate of Proficiency in English (CPE)}{}{2019}
-
-\resumePOR{International Baccalaureate (IB)}{}{2019}
-
-\resumePOR{High School Head Pupil and Valedictorian}{}{2019}
-
-\resumeSubHeadingListEnd
-\vspace{-5mm}
 
 
+    \section{\textbf{Certifications}} \label{sec:certifications}
+    \vspace{-0.4mm}
+    \resumeSubHeadingListStart
+
+    \resumePOR{MITx Machine Learning with Python: From Linear Models to Deep Learning}{}{2024}
+
+    \resumePOR{MITx Introduction to Computer Science and Programming Using Python}{}{2022}
+
+    \resumePOR{Cambridge Certificate of Proficiency in English (CPE)}{}{2019}
+
+    \resumePOR{International Baccalaureate (IB)}{}{2019}
+
+    \resumePOR{High School Head Pupil and Valedictorian}{}{2019}
+
+    \resumeSubHeadingListEnd
 
 
 %-------------------------------------------
