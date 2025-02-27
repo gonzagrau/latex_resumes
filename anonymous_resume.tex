@@ -1,9 +1,9 @@
 %-------------------------------------------
 \documentclass{resume}
-\newcommand{\name}{Gonzalo Grau} % Your Name
+\newcommand{\name}{John Doe} % Your Name
 \newcommand{\course}{Bioengineering} % Your Program
-\renewcommand{\phone}{9 11 3625-9546} % Your Phone Number
-\newcommand{\emaila}{ggrau@itba.edu.ar} %Email 1
+\renewcommand{\phone}{} % Your Phone Number
+\newcommand{\emaila}{} %Email 1
 
 \begin{document}
     \fontfamily{cmr}\selectfont
@@ -12,13 +12,11 @@
     {
         \begin{tabularx}{\linewidth}{L r}
             \\
-            \textbf{\Huge \name} & {\raisebox{0.0\height}{\footnotesize \faPhone}\ +54-\phone}\\
-            & \href{mailto:\emaila}{\raisebox{0.0\height}{\footnotesize \faEnvelope}\ {\emaila}} \\
-            Senior Bioengineering student at ITBA, &
-            \href{https://github.com/gonzagrau}{\raisebox{0.0\height}{\footnotesize \faGithub}\ {GitHub}} \\
+            \textbf{\Huge \name} & \\
+            & \\
+            Senior Bioengineering student, &
+            \\
             specialized in Machine Learning and Artificial Intelligence &
-            \href{https://www.linkedin.com/in/gonzalo-grau/}
-            {\raisebox{0.0\height}{\footnotesize \faLinkedin}\ {LinkedIn}}
         \end{tabularx}
     }
 
@@ -30,10 +28,10 @@
     \resumeSubHeadingListStart
     \resumeSubheading
     {Bioengineering - Senior year (85\%)}{CGPA: 3.46/4.00}
-    {Buenos Aires Institute of Technology}{2020-ongoing}
+    {University}{2020-ongoing}
     \resumeSubheading
-    {Friends of Fulbright 2024 exchange program}{Completed}
-    {University of New Mexico}{Spring 2024}
+    {\texit{Friends of Fulbright} Exchange program}{Completed}
+    {An American University}{Spring 2024}
     \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
@@ -43,7 +41,7 @@
     \section{\textbf{Experience}} \label{sec:experience}
     \resumeSubHeadingListStart
     \resumeSubheading
-    {Applied AI Engineering Internship at DevRev}
+    {Applied AI Engineering Internship}
     {}{}{Dec 2024 - Present day}
     \vspace{-5mm}
     \resumeItemListStart
@@ -55,11 +53,11 @@
     \resumeItemListEnd
 
     \resumeSubheading
-    {Vice president at the IEEE EMBS ITBA Student Chapter}{}
+    {Vice president at the IEEE EMBS Student Chapter}{}
     {}{Aug 2022 - July 2024}
     \vspace{-5mm}
     \resumeItemListStart
-    \item{Vice President for the IEEE Engineering in Medicine and Biology Society student chapter at ITBA}
+    \item{Vice President for the IEEE Engineering in Medicine and Biology Society student chapter at University}
     \item{Collaborated with international student chapters,
         as well as multinational health and biotech companies}
     \item {Skills involved: team leading, event planning}
@@ -67,7 +65,7 @@
 
 
     \resumeSubheading
-    {Teaching assistant at ITBA}{}
+    {Teaching assistant}{}
     {}{Aug 2021 - Present day}
     \vspace{-5mm}
     \resumeItemListStart
@@ -85,8 +83,8 @@
     \section{\textbf{Personal Projects}} \label{sec:projects}
     \resumeSubHeadingListStart
     \resumeProject
-    {LungoVax: an interactive mechanical ventilation simulator} %Project Name
-    {Awarded a special mention at the Argentinian physiology conference 2023} %Project Name, Location Name
+    {Interactive mechanical ventilation simulator} %Project Name
+    {Awarded a special mention at a physiology conference 2023} %Project Name, Location Name
     {} %Event Dates
 
     \resumeItemListStart
@@ -96,15 +94,14 @@
     \resumeItemListEnd
 
     \resumeProject
-    {CircDrosView: an interactive visualizer for single cell transcriptomics on \texit{Drosophila melanogaster}}
-    {Based upon Rosbash's 2021 paper
-    "Transcriptomic taxonomy of Drosophila circadian neurons around the clock"}
+    {Real-time seizure detection} %Project Name
+    {A machine learning model to detect seizure events in real time based on EEG analysis} %Project Name, Location Name
     {} %Event Dates
 
     \resumeItemListStart
-    \item {Extracts, transforms, and loads data from a single cell RNA-seq dataset}
-    \item {Allows for dot plot, heatmap, hourly expression, and cell type distribution visualizations}
-    \item {Technologies: Python, NumPy, Pandas, Seaborn, Scanpy, Anndata, Streamlit}
+    \item {Uses support vector machine to classify short multichannel signal segments}
+    \item {Performs spatial, statistical, and Fourier analysis}
+    \item {Technologies: Python, NumPy, Scikit-learn, SciPy}
     \resumeItemListEnd
 
     \resumeProject
