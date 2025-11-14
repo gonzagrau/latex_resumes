@@ -1,14 +1,13 @@
 %-------------------------------------------
 \documentclass{resume}
-\newcommand{\name}{Gonzalo Grau} % Your Name
-\newcommand{\course}{Bioingeniería} % Your Program
-\renewcommand{\phone}{9 11 3625-9546} % Your Phone Number
-\newcommand{\emaila}{ggrau@itba.edu.ar} %Email 1
+\newcommand{\name}{Gonzalo Grau}
+\newcommand{\course}{Bioingeniería}
+\renewcommand{\phone}{9 11 3625-9546}
+\newcommand{\emaila}{ggrau@itba.edu.ar}
 
 \begin{document}
     \fontfamily{cmr}\selectfont
 %----------HEADING-----------------
-
     {
         \begin{tabularx}{\linewidth}{L r}
             \\
@@ -24,153 +23,107 @@
 
 
 %-----------EDUCATION-----------
-
-
-    \section{\textbf{Educación}} \label{sec:education}
-    \resumeSubHeadingListStart
-    \resumeSubheading
-    {Bioingeniería - 5to año (85\%)}{Promedio: 8,66/10}
-    {Instituto Tecnológico de Buenos Aires}{2020-actualidad}
-    \resumeSubheading
-    {Programa de intercambio Friends of Fulbright 2024}{Completado}
-    {Universidad de Nuevo México, Estados Unidos}{Primavera 2024}
-
-    \resumeSubHeadingListEnd
+\section{\textbf{Educación}} \label{sec:education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Bioingeniería - 5to año (96\%)}{Promedio: 8,70/10}
+{Instituto Tecnológico de Buenos Aires}{2020-actualidad}
+\resumeSubheading
+{Programa de intercambio Friends of Fulbright 2024}{Completado}
+{Universidad de Nuevo México, Estados Unidos}{Primavera 2024}
+\resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------------
-    \vspace{-5mm}
+\vspace{-5mm}
+\section{\textbf{Experiencia}} \label{sec:experience}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Data Scientist en Entelai}
+{}{}{Sep 2025 - Presente}
+\vspace{-5mm}
 
+\resumeItemListStart
+\item{Desarrollo y mantenimiento de modelos de aprendizaje automático para análisis de imágenes médicas}
+\item{Despliegue end-to-end de modelos de aprendizaje profundo en entornos clínicos}
+\item{Habilidades: Python, PyTorch, OpenCV, Imágenes Médicas, Git, BitBucket, Docker, Agile}
+\resumeItemListEnd
 
-    \section{\textbf{Experiencia}} \label{sec:experience}
-    \resumeSubHeadingListStart
+\resumeSubheading
+{Pasantía en Inteligencia Artificial en Biwares}
+{}{}{Mar 2025 - Sep 2025}
+\vspace{-5mm}
 
-    \resumeSubheading
-    {Pasantía en Inteligencia Artificial en Biwares}
-    {}{}{Mar 2025 - Presente}
-    \vspace{-5mm}
-    \resumeItemListStart
-    \item
-    {Mantenimiento y desarrollo de un asistente virtual de IA para un banco}
-    \item {Creación de herramientas para agilizar la evaluación de modelos en producción}
-    \item{Habilidades: OpenAI, Langgraph, Langchain, Git, GitHub, Gestión de APIs, Prompting, Scrum}
-    \resumeItemListEnd
+\resumeItemListStart
+\item{Mantenimiento y desarrollo de un asistente virtual de IA para un banco}
+\item{Creación de herramientas para agilizar la evaluación de modelos en producción}
+\item{Habilidades: OpenAI, Langgraph, Langchain, Git, GitHub, Gestión de APIs, Prompting, Scrum}
+\resumeItemListEnd
+\resumeSubheading
+{Pasantía en Ingeniería de IA Aplicada en DevRev}
+{}{}{Dic 2024 - Mar 2025}
+\vspace{-5mm}
 
-    \resumeSubheading
-    {Pasantía en Ingeniería de IA Aplicada en DevRev}
-    {}{}{Dic 2024 - Mar 2025}
-    \vspace{-5mm}
-    \resumeItemListStart
-    \item
-    {Desarrollo de automatizaciones impulsadas por IA para optimizar procesos internos}
-    \item {Evaluación e implementación de agentes de IA para soporte al cliente}
-    \item{Habilidades: Typescript, Git, GitHub, Gestión de APIs, Pruebas Unitarias, Prompting, Scrum}
-    \resumeItemListEnd
-
-%    \resumeSubheading
-%    {Vicepresidente del IEEE EMBS ITBA Student Chapter}{}
-%    {}{Ago 2022 - Jul 2024}
-%    \vspace{-5mm}
-%    \resumeItemListStart
-%    \item{Vicepresidente del capítulo estudiantil de la Sociedad de Ingeniería en Medicina y Biología}
-%    \item{Colaboré con capítulos estudiantiles internacionales,
-%        así como con empresas multinacionales de salud y biotecnología}
-%    \item {Habilidades: Liderazgo, Planificación de eventos, Trabajo colaborativo}
-%    \resumeItemListEnd
-
-
-    \resumeSubheading
-    {Ayudante de cátedra en ITBA}{}
-    {}{Ago 2021 - Presente}
-    \vspace{-5mm}
-    \resumeItemListStart
-    \item
-    {Colaboración en clases teórico-prácticas de Informática General y Estructuras de Datos y Programación,
-        diseño y corrección de tareas y exámenes}
-    \item {Habilidades: Python, Programación Orientada a Objetos, Hablar en público, Docencia}
-    \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
+\resumeItemListStart
+\item{Desarrollo de automatizaciones impulsadas por IA para optimizar procesos internos}
+\item{Evaluación e implementación de agentes de IA para soporte al cliente}
+\item{Habilidades: Typescript, Git, GitHub, Gestión de APIs, Pruebas Unitarias, Prompting, Scrum}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 %-----------PROJECTS-----------------
-    \vspace{-5mm}
+\vspace{-5mm}
+\section{\textbf{Proyectos Personales}} \label{sec:projects}
+\resumeSubHeadingListStart
+\resumeProject
+{CABRA: Dispositivo de Audiometría de Respuesta Auditiva}
+{Ganador del Premio IEEE EMBS al Mejor Trabajo Estudiantil en SABI 2025}
+{}
 
+\resumeItemListStart
+\item{Dispositivo de bajo costo para pruebas ABR y estimación de umbral auditivo}
+\item{Tecnologías: ESP-32S, PCB, C++, Python, Procesamiento de Señales}
+\resumeItemListEnd
+\resumeProject
+{CircDrosView: Visualizador de transcriptómica de \textit{Drosophila Melanogaster}}
+{Basado en el artículo de Rosbash de 2021 sobre neuronas circadianas}
+{}
 
-    \section{\textbf{Proyectos Personales}} \label{sec:projects}
-    \resumeSubHeadingListStart
-    \resumeProject
-    {LungoVax: un simulador interactivo de ventilación mecánica} %Project Name
-    {Mención especial en la conferencia argentina de fisiología 2023} %Project Name, Location Name
-    {} %Event Dates
+\resumeItemListStart
+\item{Pipeline ETL y suite de visualización para análisis de datos RNA-seq}
+\item{Tecnologías: Python, NumPy, Pandas, Seaborn, Scanpy, Streamlit}
+\resumeItemListEnd
+\resumeProject
+{Sistema de Análisis de Ultrasonido Prenatal Asistido por IA}
+{Detección automatizada de translucencia nucal y hueso nasal en tiempo real para screening fetal del primer trimestre}
+{}
 
-    \resumeItemListStart
-    \item {Modela la respuesta pulmonar bajo una amplia gama de estímulos y condiciones experimentales}
-    \item {Implementa un motoro propio de resolución de ecuaciones diferenciales basado en el método Runge-Kutta 4}
-    \item {Tecnologías: Python, NumPy, TKinter}
-    \resumeItemListEnd
-
-    \resumeProject
-    {CircDrosView: un visualizador interactivo para transcriptómica de célula única en \textit{Drosophila melanogaster}}
-    {Basado en el artículo de Rosbash de 2021
-    "Transcriptomic taxonomy of Drosophila circadian neurons around the clock"}
-    {} %Event Dates
-
-    \resumeItemListStart
-    \item {Extrae, transforma y carga datos de un conjunto de datos de RNA-seq de célula única}
-    \item {Permite visualizaciones de gráficos de puntos, mapas de calor, expresión horaria y distribución de clusters}
-    \item {Tecnologías: Python, NumPy, Pandas, Seaborn, Scanpy, Anndata, Streamlit}
-    \resumeItemListEnd
-
-    \resumeProject
-    {Medición semi-automática de translucencia nucal} %Project Name
-    {Un algoritmo objetivo e independiente del usuario para medir la translucencia nucal en ecografías fetales}
-    %Project Name, Location Name
-    {} %Event Dates
-
-    \resumeItemListStart
-    \item
-    {Segmentación y medición automatizada de imágenes de ultrasonido basada en aprendizaje profundo}
-    \item {Tecnologías: Python, NumPy, OpenCV, SITK, Keras}
-    \resumeItemListEnd
-
-    \resumeSubHeadingListEnd
-
-
+\resumeItemListStart
+\item{Clasificador MobileNet-v3 y detector de objetos YOLO-v8}
+\item{Plataforma en la nube para recolección y procesamiento en tiempo real}
+\item{Tecnologías: Python, MobileNet-v3, YOLO-v8, MLFlow, PyTorch, Docker, GCP}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
 %-----------Technical skills-----------------
-    \vspace{-5mm}
-
-
-    \section{\textbf{Habilidades Técnicas e Intereses}} \label{sec:skills}
-    \begin{itemize}[leftmargin=0.05in, label={}]
-        \small{\item{
-            \textbf{Idiomas:}{ Español (nativo), Inglés (bilingüe}), Francés (intermedio) } \\
-        \textbf{Lenguajes de Programación}{: C, Python, MATLAB, Arduino, Typescript } \\
-        \textbf{Librerías:}{ Numpy, Matplotlib, Jupyter, Scipy, Pandas, sklearn, OpenCV, PyTorch, Langchain, Langgraph}\\
-        \textbf{Herramientas:}{ VS Code, Git, GitHub, Linux, Trello, MS Office, Siemens NX, SolidWorks, mySql,
-            \LaTeX} \\
-        \textbf{Campos de Interés:}
-        {ML, IA, Aprendizaje Profundo, Modelado Computacional, Procesamiento de Señales e Imágenes} \\
-        \textbf{Habilidades Blandas:}{ Autodidacta, Adaptabilidad, Metodología Ágil, Metodología Scrum} \\
-        }
-    \end{itemize}
-
-
-% %-----------Achievements-----------------
-
-
-    \section{\textbf{Certificados}} \label{sec:certifications}
-    \vspace{-0.4mm}
-    \resumeSubHeadingListStart
-
-    \resumePOR{MITx Machine Learning with Python: From Linear Models to Deep Learning}{}{2024}
-
-    \resumePOR{MITx Introduction to Computer Science and Programming Using Python}{}{2022}
-
-    \resumePOR{Cambridge Certificate of Proficiency in English (CPE)}{}{2019}
-
-    \resumePOR{Bachillerato Internacional (IB)}{}{2019}
-
-    \resumePOR{Abanderado nacional y presidente del comité estudiantil}{}{2019}
-
-    \resumeSubHeadingListEnd
+\vspace{-5mm}
+\section{\textbf{Habilidades Técnicas e Intereses}} \label{sec:skills}
+\begin{itemize}[leftmargin=0.05in, label={}]
+\small{\item{
+\textbf{Idiomas:}{ Español (nativo), Inglés (bilingüe), Francés (intermedio) } \\
+\textbf{Lenguajes de Programación}{: C, Python, MATLAB, Arduino, Typescript, Bash } \\
+\textbf{Bibliotecas:} { PyTorch, Numpy, Matplotlib, Jupyter, Scipy, Pandas, Sklearn, OpenCV, Streamlit, Langchain}\\
+\textbf{Herramientas:}{ Git, GitHub, BitBucket, Linux, Trello, Jira, Fiji Image, Mongodb, Langfuse, MLFlow, Slack, \LaTeX} \\
+\textbf{Campos de Interés:} {ML, IA, Aprendizaje Profundo, Modelado Computacional, Procesamiento de Señales e Imágenes} \\
+\textbf{Habilidades Blandas:}{ Autodidacta, Adaptabilidad, Metodologías Ágiles, Metodología Scrum} \\
+}}
+\end{itemize}
+%-----------Certificados-----------------
+\section{\textbf{Certificados}} \label{sec:certifications}
+\resumeSubHeadingListStart
+\resumePOR{MITx Machine Learning with Python: From Linear Models to Deep Learning}{}{2024}
+\resumePOR{MITx Introduction to Computer Science and Programming Using Python}{}{2022}
+\resumePOR{Cambridge Certificate of Proficiency in English (CPE)}{}{2019}
+\resumePOR{Bachillerato Internacional (IB)}{}{2019}
+\resumePOR{Abanderado nacional y presidente del comité estudiantil}{}{2019}
+\resumeSubHeadingListEnd
 
 
 %-------------------------------------------
